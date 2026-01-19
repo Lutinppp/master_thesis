@@ -1,0 +1,3 @@
+[submodule "cbo_data"]
+	path = cbo_data
+	url = https://github.com/us-cbo/eval-projections.git
