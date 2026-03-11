@@ -1053,3 +1053,11 @@ p-value:          0.1331     0.0390      0.0552      0.0524    0.0561
 ---
 
 **For detailed analysis results, see**: `DIFFERENCES_WITH_IMF_PAPER.md`
+
+
+
+
+
+KEEP THIS: 
+the plan for later: Nobody has done a clean Laubach/Furceri-style application to Europe — meaning using ex-ante European Commission fiscal forecasts (the European Semester, Stability Programme Updates) as the independent variable, matched to an event-study design around EC forecast release dates, with term premia (not raw yields, not spreads) as the dependent variable. The existing European papers either use realized fiscal outcomes, use spreads rather than term premia, or don’t use the EC forecast release event structure.
+The closest is Borgy, Laubach et al. (2011) at the Banque de France, which uses expected changes in debt/GDP ratios as pricing factors — but this is from 2011, pre-QE, pre-OMT, and uses spreads not term premia. 
