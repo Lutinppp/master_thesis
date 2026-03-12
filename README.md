@@ -1,5 +1,21 @@
 # IMF Paper Replication: The Effect of Debt and Deficits on Term Premia
 
+## Progress Log (March 12, 2026)
+
+- Added 7 hardcoded pre-1984 debt observations (1976, 1977, 1978, 1979, 1980, 1982, 1983) into the event pipeline.
+- Expanded CBO event-date union to include early pre-1984 release dates used by IMF sample construction.
+- Added debt sign diagnostic print from raw CSV (`debt_pct_GDP`) to verify whether a sign flip is needed.
+- Updated event trend construction to calendar-year time index: `t = year(cbo_date) - 1976`, `t_squared = t^2`.
+- Replaced flat IMF benchmark usage with per-cell IMF Table 1 reference values in the event summary table.
+- Re-ran event regressions after fixes: debt sample increased from `N=44` to `N=51`; total event dates increased to `N=106`.
+- Current event sample coverage: debt `N=51`, deficit `N=99`, fiscal balance `N=99`, primary balance `N=87`.
+
+### Latest Event Coefficient Snapshot (after fixes)
+
+- Debt coefficients: `fwd_5_10y = +0.0248`, `dgs10 = +0.0447`, `acmtp05 = +0.0249`, `acmtp10 = +0.0319`.
+- Fiscal balance coefficients: `fwd_5_10y = -0.0224`, `dgs10 = +0.0553`, `acmtp05 = -0.1333`, `acmtp10 = -0.1683`.
+- Per-cell IMF reference columns (`IMF Ref`, `IMF Ratio`) are now printed directly in the event summary table.
+
 ## Project Status ✓ SUCCESSFULLY REPLICATED
 
 **Last Updated**: March 2, 2026 - **COMPLETE REPLICATION ACHIEVED**  
